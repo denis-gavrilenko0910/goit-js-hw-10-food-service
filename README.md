@@ -1,7 +1,7 @@
 # goit-js-hw-10-food-service
 https://denis-gavrilenko0910.github.io/goit-js-hw-10-food-service/
 ## preview pictures
-<img src="https://github.com/denis-gavrilenko0910/preview-pictures/blob/master/hw-js-10-light.jpg" alt="food menu with light mode theme" width="450" /><img src="https://github.com/denis-gavrilenko0910/preview-pictures/blob/master/hw-js-10-dark.jpg" alt="food menu with dark mode theme" width="450" />
+<img src="https://github.com/denis-gavrilenko0910/preview-pictures/blob/master/hw-js-10-light.jpg" alt="food menu with light mode theme" width="400" /><img src="https://github.com/denis-gavrilenko0910/preview-pictures/blob/master/hw-js-10-dark.jpg" alt="food menu with dark mode theme" width="400" />
 ## Task:
 **Add the functionality of changing the theme when clicking (change event) on the `#theme-switch-toggle` checkbox in the toolbar.
 By default, the theme is light.**
