@@ -1,80 +1,28 @@
-# Webpack starter kit &middot; [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+# goit-js-hw-10-food-service
 
-## Зависимости
+https://denis-gavrilenko0910.github.io/goit-js-hw-10-food-service/
 
-На компьютере должена быть установлена LTS-версия
-[Node.js](https://nodejs.org/en/).
+## preview pictures
 
-### Разработка
+<img src="https://github.com/denis-gavrilenko0910/preview-pictures/blob/master/hw-js-10-light.jpg" alt="food menu with light mode theme" width="400" /><img src="https://github.com/denis-gavrilenko0910/preview-pictures/blob/master/hw-js-10-dark.jpg" alt="food menu with dark mode theme" width="400" />
 
-Для быстрого старта необходимо склонировать репозиторий.
+## Task:
 
-```shell
-git clone https://github.com/luxplanjay/webpack-starter-kit.git
-```
+**Add the functionality of changing the theme when clicking (change event) on
+the `#theme-switch-toggle` checkbox in the toolbar. By default, the theme is
+light.**
 
-Переименовать папку сборки именем вашего проекта.
+- When changing the theme, you need to add a `light-theme` or `dark-theme` class
+  to the `body` element.
+- The selected theme should persist across page reloads.
+- Use localStorage to store the theme.
+- If the theme is dark when the page loads, do not forget to set the checked
+  property of the `#theme-switch-toggle` checkbox to `true` so that the slider
+  will move to the correct position.
 
-```shell
-mv webpack-starter-kit имя_проекта
-```
+## Templating
 
-Затем перейти в папку проекта.
-
-```shell
-cd имя_проекта
-```
-
-Находясь в папке проекта удалить папку `.git` связанную с репозиторием сборки
-выполнив следующую команду.
-
-```shell
-npx rimraf .git
-```
-
-Установить все зависимости.
-
-```shell
-npm install
-```
-
-И запустить режим разработки.
-
-```shell
-npm start
-```
-
-Во вкладке браузера перейти по адресу
-[http://localhost:4040](http://localhost:4040).
-
-### Сборка в продакшен
-
-Для того чтобы создать оптимизированные файлы для хостинга, необходимо выполнить
-следующую команду. В корне проекта появится папка `build` со всеми
-оптимизированными ресурсами.
-
-```shell
-npm run build
-```
-
-### Deploying/Publishing
-
-Сборка может автоматически деплоить билд на GitHub Pages удаленного (remote)
-репозитория. Для этого необходимо в файле `package.json` отредактировать поле
-`homepage`, заменив имя пользователя и репозитория на свои.
-
-```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория"
-```
-
-После чего в терминале выполнить следующую команду.
-
-```shell
-npm run deploy
-```
-
-Если нет ошибок в коде и свойство `homepage` указано верно, запустится сборка
-проекта в продакшен, после чего содержимое папки `build` будет помещено в ветку
-`gh-pages` на удаленном (remote) репозитории. Через какое-то время живую
-страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`.
+**Using the [Handlebars](https://handlebarsjs.com/) template engine, create a
+template for one menu item. Then, using the template, create the markup of the
+entire menu using the data from `menu.json` and add it to the DOM in
+`ul.js-menu`.**
