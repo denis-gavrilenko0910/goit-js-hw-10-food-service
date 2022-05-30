@@ -115,15 +115,25 @@ body.dark-theme {
   padding: 0;
   margin: 0;
   list-style: none;
-  max-width: calc(100% - 64px);
   margin-left: auto;
   margin-right: auto;
-  display: grid;
+  max-width: calc(100% - 30px);
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 24px;
 }
-
+@media screen and (min-width: 575px) {
+  .menu {
+    display: grid;
+    max-width: calc(100% - 48px);
+  }
+}
+@media screen and (min-width: 860px) {
+  .menu {
+    max-width: calc(100% - 64px);
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  }
+}
 .card {
   position: relative;
   display: flex;
@@ -180,7 +190,7 @@ body.dark-theme {
   margin-left: auto;
   margin-right: auto;
   margin-top: 16px;
-  width: calc(100% - 16px);
+  width: 100%;
 }
 
 .tag-list {
